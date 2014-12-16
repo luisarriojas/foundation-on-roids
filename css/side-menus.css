@@ -1,0 +1,66 @@
+/*
+Side Menus
+Copyright (c) 2014 Luis Enrique Arriojas
+http://opensource.org/licenses/MIT
+*/
+#main {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 0;
+    overflow: auto;
+}
+#main .leftButton {
+    float: left;
+    margin-left: 30px;
+}
+#main .rightButton {
+    float: right;
+    margin-right: 30px;
+}
+#close-button {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 99;
+    display: none;
+    background: rgba(255, 255, 255, 0.75);
+}
+.left-menu {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 250px;
+    z-index: 100;
+    display: none;
+    box-shadow: -5px 0 5px black inset;
+    padding: 10px;
+    background: url('../img/a.png') repeat;
+    color: white;
+    overflow: auto;
+}
+.left-menu a {
+    color: white;
+}
+.right-menu {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    width: 250px;
+    z-index: 100;
+    display: none;
+    box-shadow: 5px 0 5px black inset;
+    padding: 10px;
+    background: url('../img/c.png') repeat;
+    color: black;
+    overflow: auto;
+}
+.right-menu a {
+    color: black;
+}

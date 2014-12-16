@@ -1,0 +1,106 @@
+<!--
+Foundation on Roids
+Copyright (c) 2014 Luis Enrique Arriojas
+http://opensource.org/licenses/MIT
+-->
+<!doctype html>
+<html ng-app="hioApp" ng-controller="hioCtrl">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="{{hioMeta.description}}">
+    <title ng-bind-template="{{hioMeta.title}} - hio"></title>
+
+    <!--CSS-->
+    <link href="css/foundation.min.css" rel="stylesheet" />
+    <link href="css/material-colors.min.css" rel="stylesheet" />
+    <link href="css/font-awesome.min.css" rel="stylesheet" />
+    <link href="css/side-menus.css" rel="stylesheet" />
+    <style>
+        .row {
+            max-width: 100%;
+        }
+        #background {
+            background-image: url(img/image.jpg);
+            background-size: cover;
+            background-position: center;
+            height: 200px;
+        }
+    </style>
+
+    <!--JS-->
+    <script src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.3.5/angular.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.3.5/angular-route.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.3.5/angular-sanitize.min.js"></script>
+    <script src="js/angular-app.js"></script>
+    <script src="js/angular-ctrl.js"></script>
+    <script src="js/vendor/modernizr.js"></script>
+</head>
+
+<body>
+    <!--Main container-->
+    <div id="main">
+        <!--Options-->
+        <div class="row light-blue">
+            <div class="small-12 columns z-depth-1">
+                <a menu="a" class="option leftButton white-text" href="javascript:void(0);"><i class="fa fa-area-chart"></i> Open menu-a</a>
+                <a menu="b" class="option leftButton white-text" href="javascript:void(0);">Open menu-b</a>
+                <a menu="e" class="option rightButton white-text" href="javascript:void(0);">Open menu-e</a>
+                <a menu="d" class="option rightButton white-text" href="javascript:void(0);">Open menu-d</a>
+                <a menu="c" class="option rightButton white-text" href="javascript:void(0);">Open menu-c</a>
+            </div>
+        </div>
+        <!--End options-->
+
+        <div ng-view></div>
+    </div>
+
+    <!--Menu container-->
+    <div id="menu-container">
+        <!--Menu A-->
+        <div id="menu-a" class="left-menu">
+            Hello, I'm the menu-a.
+            <br/>
+            <a class="option-close" href="javascript:void(0);">Close menu-a</a>
+        </div>
+
+        <!--Menu B-->
+        <div id="menu-b" class="left-menu">
+            Hello, I'm the menu-b.
+            <br/>
+            <a class="option-close" href="javascript:void(0);">Close menu-b</a>
+        </div>
+
+        <!--Menu C-->
+        <div id="menu-c" class="right-menu">
+            Hello, I'm the menu-c.
+            <br/>
+            <a class="option-close" href="javascript:void(0);">Close menu-c</a>
+        </div>
+
+        <!--Menu D-->
+        <div id="menu-d" class="right-menu">
+            Hello, I'm the menu-d.
+            <br/>
+            <a class="option-close" href="javascript:void(0);">Close menu-d</a>
+        </div>
+
+        <!--Menu E-->
+        <div id="menu-e" class="right-menu">
+            Hello, I'm the menu-e.
+            <br/>
+            <a class="option-close" href="javascript:void(0);">Close menu-e</a>
+        </div>
+
+        <!--Close button-->
+        <div id="close-button"></div>
+    </div>
+
+    <script src="js/side-menus.js"></script>
+    <script src="js/foundation.min.js"></script>
+    <script>
+        $(document).foundation();
+    </script>
+</body>
